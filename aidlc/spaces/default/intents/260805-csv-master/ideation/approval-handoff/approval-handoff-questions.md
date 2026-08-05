@@ -9,7 +9,7 @@ Note: market-research, feasibility, team-formation, and rough-mockups were all S
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. Yes — intent-statement.mdとscope-document.mdの内容(サービス事業者・ケアマネジャーを主要利用者とし、CSV取り込み・検証・保存と条件検索表示を最小スコープとする)に合意している
 
 ## Q2. Have all critical risks been acknowledged with mitigations?
 
@@ -18,7 +18,7 @@ Note: market-research, feasibility, team-formation, and rough-mockups were all S
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. Yes — 最大のリスクは20列のCSV検証ロジックの正確性であり、リスク優先(risk-first)の実装順序で緩和する方針を確認済み
 
 ## Q3. Is there budget/resource commitment for this initiative?
 
@@ -27,7 +27,7 @@ Note: market-research, feasibility, team-formation, and rough-mockups were all S
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. Yes — この取り組みを進める予算・リソースの割り当てが確認されている
 
 ## Q4. Go/No-Go recommendation — proceed to Inception?
 
@@ -36,7 +36,7 @@ Note: market-research, feasibility, team-formation, and rough-mockups were all S
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. Go — Inceptionフェーズ(practices-discovery等)へ進む
 
 ## Assumptions & Open Questions
 
