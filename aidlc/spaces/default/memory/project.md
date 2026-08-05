@@ -42,6 +42,7 @@
 <!-- Decisions made in earlier stages that should not be re-asked. -->
 <!-- Format: DECIDED: [decision] (Stage [slug], [date]) -->
 
+- DECIDED: 単位数表マスタCSVの検証は19列すべてに適用する。予備項目(CSV定義表で定義欄が空の列)のみ検証対象外とする — 定義が無い列には検証すべき形式的ルールが存在しないため (Stage scope-definition, 2026-08-05) (learned 2026-08-05) <!-- cid:scope-definition:c1 -->
 ## Scope Overrides
 
 <!-- Custom scope rules for this project. -->

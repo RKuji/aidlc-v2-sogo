@@ -3,7 +3,6 @@
 
 ## Interpretations
 <!-- example: 2026-05-29T10:14:32Z — chose REST over GraphQL; the consuming team only needs CRUD, revisit if subscriptions land -->
-- 2026-08-05T06:30:00Z — Q2's "some columns don't need validation" appeared to contradict intent-capture's [desc] ("reject CSV that violates the definition"); resolved via a Q6 follow-up — only 予備項目 (whose CSV definition column is blank) is exempt, all other 19 columns remain must-validate. Treated as a consistent reading (no definition → nothing to violate), not an actual scope reduction.
 
 ## Deviations
 <!-- example: 2026-05-29T10:14:32Z — skipped the optional caching layer the stage prose suggested; the dataset is small enough that it adds risk -->

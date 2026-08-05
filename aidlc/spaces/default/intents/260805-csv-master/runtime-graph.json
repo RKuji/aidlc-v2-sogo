@@ -651,9 +651,162 @@
     {
       "stage_slug": "scope-definition",
       "started_at": "2026-08-05T06:41:18Z",
-      "completed_at": null,
+      "completed_at": "2026-08-05T07:20:38Z",
       "agent": "aidlc-product-agent",
       "memory_path": "aidlc/spaces/default/intents/260805-csv-master/ideation/scope-definition/memory.md",
+      "memory_entries": 1,
+      "memory_breakdown": {
+        "interpretations": 1,
+        "deviations": 0,
+        "tradeoffs": 0,
+        "open_questions": 0
+      },
+      "sensor_firings": [
+        {
+          "id": "required-sections",
+          "fire_id": "679327bc",
+          "result": "passed",
+          "ts": "2026-08-05T06:42:39Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "53be88dc",
+          "result": "passed",
+          "ts": "2026-08-05T06:42:39Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "94c8d57b",
+          "result": "passed",
+          "ts": "2026-08-05T07:01:50Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "c33208cd",
+          "result": "passed",
+          "ts": "2026-08-05T07:01:50Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "de1c6114",
+          "result": "passed",
+          "ts": "2026-08-05T07:01:54Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "2ab4c616",
+          "result": "passed",
+          "ts": "2026-08-05T07:01:54Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "9b18a001",
+          "result": "passed",
+          "ts": "2026-08-05T07:01:59Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "26d59f97",
+          "result": "passed",
+          "ts": "2026-08-05T07:01:59Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "550b8119",
+          "result": "passed",
+          "ts": "2026-08-05T07:02:05Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "d60a5c58",
+          "result": "passed",
+          "ts": "2026-08-05T07:02:05Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "769d1f3f",
+          "result": "passed",
+          "ts": "2026-08-05T07:03:50Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "e6cacb69",
+          "result": "passed",
+          "ts": "2026-08-05T07:03:50Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "998e1226",
+          "result": "passed",
+          "ts": "2026-08-05T07:04:16Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "79c1d90c",
+          "result": "passed",
+          "ts": "2026-08-05T07:04:16Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "6617d465",
+          "result": "passed",
+          "ts": "2026-08-05T07:04:30Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "8acf6a7a",
+          "result": "passed",
+          "ts": "2026-08-05T07:04:30Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "0bdd0a98",
+          "result": "passed",
+          "ts": "2026-08-05T07:04:39Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "f6f914dd",
+          "result": "passed",
+          "ts": "2026-08-05T07:04:39Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "457ddddb",
+          "result": "passed",
+          "ts": "2026-08-05T07:17:28Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "d2643195",
+          "result": "passed",
+          "ts": "2026-08-05T07:17:28Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "c42802d2",
+          "result": "passed",
+          "ts": "2026-08-05T07:17:34Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "777e2a69",
+          "result": "passed",
+          "ts": "2026-08-05T07:17:35Z"
+        }
+      ],
+      "outcome": "approved",
+      "learnings_captured": {
+        "from_orchestrator": 1,
+        "from_user_addition": 0
+      }
+    },
+    {
+      "stage_slug": "approval-handoff",
+      "started_at": "2026-08-05T07:20:38Z",
+      "completed_at": null,
+      "agent": "aidlc-delivery-agent",
+      "memory_path": "aidlc/spaces/default/intents/260805-csv-master/ideation/approval-handoff/memory.md",
       "memory_entries": null,
       "memory_breakdown": null,
       "sensor_firings": [],
