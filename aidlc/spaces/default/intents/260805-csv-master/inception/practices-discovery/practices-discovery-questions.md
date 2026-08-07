@@ -9,7 +9,7 @@ Greenfield project. `org.md`'s five matching sections are shown as suggested def
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. org.mdのデフォルトを採用: トランクベース開発。短命なfeatureブランチでmainへ、Boltブランチはsquash-mergeで1コミットに統合
 
 ## Q2. Walking Skeleton — confirm the stance for this scope?
 
@@ -18,7 +18,7 @@ Greenfield project. `org.md`'s five matching sections are shown as suggested def
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. スコープファイル(`csv-master-import-display`)の`skeleton: on`を採用: Bolt 1はウォーキングスケルトンとして単独実行・ゲート、承認後にラダープロンプトで残りのBoltの進め方を決める
 
 ## Q3. Testing Posture — coverage floor & which tools gate CI?
 
@@ -27,7 +27,7 @@ Greenfield project. `org.md`'s five matching sections are shown as suggested def
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: B. 全テストツール(Vitest, Testcontainers, Storybook, MSW, Playwright, MagicPod)をCIでブロッキング実行する
 
 ## Q4. Testing Posture — CSV 19-column validation error-handling & fixtures?
 
@@ -36,7 +36,7 @@ Greenfield project. `org.md`'s five matching sections are shown as suggested def
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: B. Collect-all: すべての違反を収集してエラーリストとして返す
 
 ## Q5. Deployment — confirm deploy-on-merge to staging?
 
@@ -45,7 +45,7 @@ Greenfield project. `org.md`'s five matching sections are shown as suggested def
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. org.mdのデフォルトを採用: マージ時にstaging環境へ自動デプロイ、production環境へは別途の手動承認(テックリード+プロダクトオーナー承認)を経てデプロイ
 
 ## Q6. Code Style & layering — confirm conventions and layer boundaries?
 
@@ -54,7 +54,7 @@ Greenfield project. `org.md`'s five matching sections are shown as suggested def
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. org.mdのデフォルト(Prettier/ESLint、リンター設定優先)を採用。加えて、Hono(API層)→サービス層→Prisma(データ層)の3層構造を守り、CSV列名(証記載保険者番号等の日本語・カタカナ表記)はTypeScript/Zod/Prismaスキーマ上では英語のcamelCase識別子にマッピングし、対応表をコード内コメントまたはドキュメントに明記する
 
 ## Q7. Security & Supply-Chain — SAST/secret/dependency scanning expectations?
 
@@ -65,7 +65,7 @@ devsecopsレビューにより、org.mdの5セクションにはSAST/DAST/シー
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. CIにdependency scanning(例:npm audit/Dependabot相当)とsecret scanningを組み込む。SAST/DASTは今回のスコープでは対象外とする(内部業務システムのため)
 
 ## Assumptions & Open Questions
 

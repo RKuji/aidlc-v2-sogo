@@ -921,9 +921,308 @@
     {
       "stage_slug": "practices-discovery",
       "started_at": "2026-08-05T08:05:30Z",
-      "completed_at": null,
+      "completed_at": "2026-08-07T04:43:01Z",
       "agent": "aidlc-pipeline-deploy-agent",
       "memory_path": "aidlc/spaces/default/intents/260805-csv-master/inception/practices-discovery/memory.md",
+      "memory_entries": 1,
+      "memory_breakdown": {
+        "interpretations": 0,
+        "deviations": 1,
+        "tradeoffs": 0,
+        "open_questions": 0
+      },
+      "sensor_firings": [
+        {
+          "id": "required-sections",
+          "fire_id": "b71ab145",
+          "result": "passed",
+          "ts": "2026-08-05T08:07:07Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "98a8d511",
+          "result": "passed",
+          "ts": "2026-08-05T08:07:07Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "f0a10605",
+          "result": "passed",
+          "ts": "2026-08-05T08:07:12Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "222598c0",
+          "result": "passed",
+          "ts": "2026-08-05T08:07:12Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "b3a6f747",
+          "result": "passed",
+          "ts": "2026-08-05T08:07:20Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "b7d9b8f8",
+          "result": "passed",
+          "ts": "2026-08-05T08:07:20Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "69c69c65",
+          "result": "failed",
+          "ts": "2026-08-05T08:07:22Z",
+          "detail_path": "aidlc/spaces/default/intents/260805-csv-master/.aidlc-sensors/practices-discovery/required-sections-69c69c65.md"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "faf50b63",
+          "result": "passed",
+          "ts": "2026-08-05T08:07:22Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "a5c05f85",
+          "result": "passed",
+          "ts": "2026-08-05T08:09:01Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "a50dd239",
+          "result": "passed",
+          "ts": "2026-08-05T08:09:02Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "77e0e8d1",
+          "result": "passed",
+          "ts": "2026-08-05T08:10:27Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "c56f115b",
+          "result": "passed",
+          "ts": "2026-08-05T08:10:27Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "935233db",
+          "result": "passed",
+          "ts": "2026-08-05T08:11:53Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "ae492853",
+          "result": "passed",
+          "ts": "2026-08-05T08:11:53Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "c0cf1baa",
+          "result": "passed",
+          "ts": "2026-08-05T08:12:44Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "9f88b8a9",
+          "result": "passed",
+          "ts": "2026-08-05T08:12:44Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "59d87451",
+          "result": "passed",
+          "ts": "2026-08-07T03:46:14Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "31b32f55",
+          "result": "passed",
+          "ts": "2026-08-07T03:46:14Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "8ff1d0e9",
+          "result": "passed",
+          "ts": "2026-08-07T03:46:19Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "ae836e34",
+          "result": "passed",
+          "ts": "2026-08-07T03:46:19Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "ac352205",
+          "result": "passed",
+          "ts": "2026-08-07T03:46:23Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "2f1c8327",
+          "result": "passed",
+          "ts": "2026-08-07T03:46:24Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "f8751b18",
+          "result": "passed",
+          "ts": "2026-08-07T03:46:28Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "93848e14",
+          "result": "passed",
+          "ts": "2026-08-07T03:46:28Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "cd916fdf",
+          "result": "passed",
+          "ts": "2026-08-07T03:58:33Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "082c95b4",
+          "result": "passed",
+          "ts": "2026-08-07T03:58:33Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "59bd7a2f",
+          "result": "passed",
+          "ts": "2026-08-07T03:58:40Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "67f37d49",
+          "result": "passed",
+          "ts": "2026-08-07T03:58:40Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "8eddcfe2",
+          "result": "passed",
+          "ts": "2026-08-07T03:58:47Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "7c6c5a84",
+          "result": "passed",
+          "ts": "2026-08-07T03:58:47Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "005da1bd",
+          "result": "passed",
+          "ts": "2026-08-07T04:00:00Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "b7cfc1de",
+          "result": "passed",
+          "ts": "2026-08-07T04:00:00Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "c520de95",
+          "result": "passed",
+          "ts": "2026-08-07T04:00:05Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "cd56417f",
+          "result": "passed",
+          "ts": "2026-08-07T04:00:05Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "f88ae835",
+          "result": "passed",
+          "ts": "2026-08-07T04:00:24Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "a60a6a2c",
+          "result": "passed",
+          "ts": "2026-08-07T04:00:24Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "42043514",
+          "result": "failed",
+          "ts": "2026-08-07T04:00:31Z",
+          "detail_path": "aidlc/spaces/default/intents/260805-csv-master/.aidlc-sensors/practices-discovery/required-sections-42043514.md"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "c68e0b2c",
+          "result": "passed",
+          "ts": "2026-08-07T04:00:31Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "bf57f7ca",
+          "result": "passed",
+          "ts": "2026-08-07T04:23:15Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "39db557f",
+          "result": "passed",
+          "ts": "2026-08-07T04:23:15Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "f1b6b39c",
+          "result": "passed",
+          "ts": "2026-08-07T04:23:26Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "5b341b4d",
+          "result": "passed",
+          "ts": "2026-08-07T04:23:26Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "9cfe8933",
+          "result": "passed",
+          "ts": "2026-08-07T04:23:49Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "2198fdfb",
+          "result": "passed",
+          "ts": "2026-08-07T04:23:49Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "f7e0689d",
+          "result": "passed",
+          "ts": "2026-08-07T04:42:56Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "98c71fdb",
+          "result": "passed",
+          "ts": "2026-08-07T04:42:56Z"
+        }
+      ],
+      "outcome": "approved",
+      "learnings_captured": {
+        "from_orchestrator": 0,
+        "from_user_addition": 0
+      }
+    },
+    {
+      "stage_slug": "requirements-analysis",
+      "started_at": "2026-08-07T04:43:01Z",
+      "completed_at": null,
+      "agent": "aidlc-product-agent",
+      "memory_path": "aidlc/spaces/default/intents/260805-csv-master/inception/requirements-analysis/memory.md",
       "memory_entries": null,
       "memory_breakdown": null,
       "sensor_firings": [],

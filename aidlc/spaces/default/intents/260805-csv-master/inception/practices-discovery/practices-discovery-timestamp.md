@@ -1,11 +1,11 @@
-# Practices Discovery Timestamp — DRAFT PLACEHOLDER
+# Practices Discovery Timestamp — FINAL
 
-> Status: **DRAFT PLACEHOLDER**. This file will be stamped with the final
-> integration timestamp once the practices-discovery stage completes
-> (post-interview, post-affirmation). Left as a placeholder at this Step 2
-> (Lead Draft) point in the workflow.
+> Status: **FINAL**. Stamped at Step 5 (Lead Integration) once the human
+> interview (Step 4) was fully answered and `team-practices.md` /
+> `discovered-rules.md` / `evidence.md` were finalized.
 
 - Stage: practices-discovery
 - Intent: 260805-csv-master
-- Step completed: Step 2 (Lead Draft)
-- Final stamp: TBD (to be set at stage completion/integration)
+- Step completed: Step 5 (Lead Integration)
+
+Discovered: 2026-08-07T04:00:27Z at commit a853f77

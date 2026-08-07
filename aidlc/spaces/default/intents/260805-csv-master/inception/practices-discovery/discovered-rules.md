@@ -1,21 +1,37 @@
-# Discovered Rules — DRAFT (Step 2: Lead Draft)
+# 発見されたルール — 承認済み(AFFIRMED)
 
-> Status: **DRAFT**. No hard constraints have been human-stated yet for
-> this greenfield project. Both sections below are intentionally left
-> minimal/empty pending the human interview step, where any `ALWAYS`
-> (Mandated) or `NEVER` (Forbidden) rules specific to this project will be
-> captured and, once affirmed, promoted into `project.md`.
+> ステータス: **承認済み(AFFIRMED)**。これらのハード制約は、intent
+> `260805-csv-master` についてステップ4のインタビュー
+> (`practices-discovery-questions.md`)にて人間が明示的に述べたものである。
+> それぞれが単なる一般的な好みではなく、真の ALWAYS/NEVER 制約であり、
+> 承認ゲートにおいて `project.md` の `## Mandated`/`## Forbidden`
+> セクションへ昇格させる候補である。
 
 ## Mandated
 
-<!-- No project-specific ALWAYS rules discovered yet. -->
-<!-- Format once populated: ALWAYS [behavior] (affirmed [date]) -->
-
-(none discovered at this draft step)
+- ALWAYS 確認済みの6つのテストツール(Vitest、Testcontainers、
+  Storybook、MSW、Playwright、MagicPod)すべてを、`main` へのマージ前に
+  ブロッキングな CI チェックとして実行する — 本プロジェクトにおいて、
+  非ブロッキング/据え置きの実行サイクルで動作するテストツールは存在しない
+  (承認日 2026-08-07、Q3)。
+- ALWAYS CSV の1行における19列すべての検証違反(および全行にわたる違反)を、
+  最初に検出した違反で停止するのではなく、単一の違反リストへ収集する —
+  インポートパイプラインは CSV 検証においてフェイルファストであっては
+  ならない(承認日 2026-08-07、Q4)。
+- ALWAYS 日本語/半角カタカナの CSV 列名を、TypeScript/Zod/Prisma の
+  コード内で英語の camelCase 識別子にマッピングし、3層すべて(API、
+  サービス、データ)が参照する単一の文書化されたマッピング表
+  (ソースの列名 → camelCase 識別子)を裏付けとする(承認日 2026-08-07、
+  Q6)。
+- ALWAYS 依存関係スキャンおよびシークレットスキャンを CI 内で実行し、
+  `main` へのマージをゲートする(承認日 2026-08-07、Q7)。
 
 ## Forbidden
 
-<!-- No project-specific NEVER rules discovered yet. -->
-<!-- Format once populated: NEVER [behavior] (affirmed [date]) -->
-
-(none discovered at this draft step)
+- NEVER CSV 検証をフェイルファストとして扱わない(すなわち、最初の違反の
+  後に行/ファイルの検証を中断しない) — 本プロジェクトの CSV
+  インポートパイプラインでは全件収集(collect-all)が必須である
+  (承認日 2026-08-07、Q4)。
+- NEVER 現在のスコープにおいて、SAST または DAST ツールを本プロジェクトの
+  CI/CD パイプラインに含めない — この社内業務システムについては
+  明示的に対象外と宣言されている(承認日 2026-08-07、Q7)。

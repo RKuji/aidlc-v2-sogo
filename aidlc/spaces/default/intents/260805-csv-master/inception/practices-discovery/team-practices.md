@@ -1,78 +1,81 @@
-# Team Practices — DRAFT (Step 2: Lead Draft)
+# チーム実践方針 — 承認済み(AFFIRMED)
 
-> Status: **DRAFT / PROPOSED**. This is a greenfield project with no prior
-> team affirmation. Every value below is copied from `org.md`'s framework
-> defaults and is a **proposal pending human confirmation** at the
-> practices-discovery interview step. Nothing here should be treated as
-> affirmed until the human explicitly confirms, edits, or overrides it.
+> ステータス: **承認済み(AFFIRMED)**。ステップ4のインタビュー
+> (`practices-discovery-questions.md`、Q1〜Q7)にて、intent
+> `260805-csv-master`(単位数表マスタ CSV import/display feature)について
+> 人間による確認済み。これら5つのセクションは本プロジェクトのチーム承認済み
+> 実践方針となり、人間がより厳格な、または異なる選択をした箇所(Q3、Q4、Q6)
+> については、ステップ2ドラフトの org.md デフォルト提案に優先する。
 
 ## Way of Working
 
-**Proposed (org.md default):** Trunk-based development. All work merges to
-`main` via short-lived feature branches (typically resolved within 1-2
-days); we avoid long-lived branches. For Construction worktrees, the
-worktree base branch is `main` and the merge target is `main`. If the
-project requires multiple environments (staging, production), we still
-keep one trunk and gate releases via tags or environment-specific
-deployment configs — not long-lived release branches. We squash-merge Bolt
-branches into `main`: each Bolt becomes one commit on the trunk, named by
-the Bolt slug, with full Bolt commit history preserved on the source
-branch until the worktree is discarded.
-
-*Pending confirmation: does this greenfield project (Next.js/React/
-TypeScript, Hono, Prisma, Aurora PostgreSQL) want to affirm trunk-based +
-squash-merge as-is, or specialize it?*
+`org.md` のデフォルトどおり、トランクベース開発とする(Q1、そのまま確認)。
+すべての作業は短命なフィーチャーブランチを経由して `main` にマージされる。
+Construction のワークツリーについては、ワークツリーのベースブランチは
+`main` であり、マージ先も `main` である。Bolt ブランチは `main` に
+スカッシュマージする: 各 Bolt はトランク上で1つのコミットとなり、Bolt の
+スラッグ名で命名され、ワークツリーが破棄されるまで、完全な Bolt のコミット
+履歴がソースブランチ上に保持される。
 
 ## Walking Skeleton
 
-**Proposed (org.md default):** When practices are scope-dependent, run the
-walking-skeleton Bolt first only when the active scope file declares
-`skeleton: on`; Bolt 1 is solo, gated, and the user explicitly approves
-before remaining Bolts run. Skip the skeleton ceremony when the scope file
-declares `skeleton: off` — the first Bolt then runs like any other. After
-Bolt 1 ships (when it runs), the orchestrator fires the ladder prompt
-("continue autonomously" vs "gate every Bolt"); the choice persists as
-`Construction Autonomy Mode` in `aidlc-state.md`.
-
-*Pending confirmation: no scope file examined yet at this step — the
-`skeleton:` flag for this CSV import/display feature scope needs to be
-checked/confirmed during the interview.*
+このスコープ(`csv-master-import-display` は `skeleton: on` を宣言)では
+Walking Skeleton は**有効(ON)**である(Q2)。Bolt 1 は単独かつゲート付きで
+実行される — 以降の Bolt が実行される前に、ユーザーが明示的に承認する。
+Bolt 1 のリリース後、オーケストレーターははしごプロンプト(「自律的に続行」
+対「すべての Bolt をゲートする」)を発火する。チームの選択は
+`aidlc-state.md` の `Construction Autonomy Mode` として永続化される。
 
 ## Testing Posture
 
-**Proposed (org.md default):** Tests are a first-class deliverable in
-every Bolt. Default per scope: `mvp`, `enterprise`, `feature`, `infra` →
-tests written alongside code, minimum 80% line coverage, tests run in CI
-before merge; `bugfix`, `security-patch` → regression test for the
-specific issue, existing suite stays green; `poc`, `refactor`, `workshop`
-→ existing suite stays green, no new test floor required.
+**org.md のデフォルトより厳格。** 確認済みのすべてのテストツール — Vitest、
+Testcontainers、Storybook、MSW、Playwright、MagicPod — は、マージ前に
+**ブロッキング**な CI ゲートとして実行される(Q3、選択肢B)。本プロジェクトの
+スタックにおいて、非ブロッキング/ナイトリー実行に据え置かれるテストツールは
+存在しない。6つのツールすべてが通過しない限り、PR はマージできない。
 
-*Pending confirmation: prior intent-capture/scope-definition context
-mentions Vitest, Testcontainers, Storybook, MSW, Playwright, and MagicPod
-as the intended tooling — this needs to be affirmed as the concrete
-testing-posture specialization for this project (tool selection is not an
-org.md default; it must be human-confirmed here).*
+19列の単位数表マスタ CSV に対する CSV 検証のエラーハンドリングは、
+フェイルファストではなく**全件収集(collect-all)**とする(Q4、選択肢B):
+バリデーターは、最初に検出した違反で停止するのではなく、19列すべてのルールを
+各行に対して実行し、**違反の完全なリスト**を一度のパスで返さなければならない。
+これにより、サービス境界における結果型の形状(例: 最初のエラーで例外を
+スローする方式ではなく、型付けされた違反リストを返す結果型)、および
+テストフィクスチャ戦略(フィクスチャは1行あたり単一違反のケースだけでなく、
+複数の同時違反も検証しなければならない)が決まる。
+
+最低80%のライン カバレッジは引き続き下限とする(org.md のデフォルトであり、
+インタビューでは変更されていない)。カバレッジ計測の仕組みおよびツールごとの
+CI 組み込みは、上記「6ツールすべてがブロックする」という決定に制約される、
+ci-pipeline ステージでの実装詳細である。
 
 ## Deployment
 
-**Proposed (org.md default):** Deploy on merge to staging environments.
-Production deploys gate on a separate manual approval — typically tech
-lead + product owner sign-off in CodePipeline or a CD platform's
-environment protection. Continuous deployment to production is a team
-decision, not a framework default.
-
-*Pending confirmation: target infra appears to be Aurora PostgreSQL per
-prior context — deployment target/pipeline specifics need confirmation,
-not assumed here.*
+`org.md` のデフォルトどおり、staging へはマージ時にデプロイする(Q5、
+そのまま確認)。本番デプロイは、昇格前に別途の手動承認(テックリード+
+プロダクトオーナーの承認)をゲートとする。
 
 ## Code Style
 
-**Proposed (org.md default):** Defer to project-level configuration —
-Prettier (JS/TS) as formatter, ESLint as linter, run in CI before merge
-(failure blocks the PR), language-idiomatic naming (camelCase for
-JS/TS). Agents read the project's linter config first; a framework
-code-style suggestion only fires if the linter doesn't already cover it.
+Prettier(フォーマッター)と ESLint(リンター)を用い、リンター設定は
+汎用的なフレームワークの提案に優先する — org.md のデフォルトどおり、
+そのまま確認(Q6)。加えて、本プロジェクトでは**3層アーキテクチャ**を
+採用することを確認する:
 
-*Pending confirmation: no `.prettierrc`/ESLint config exists yet in this
-repo (greenfield, no application code) — these will need to be
-established, likely during/after this stage, and then affirmed here.*
+- **Hono API 層** — トランスポート/HTTP に関する関心事のみ(ルーティング、
+  リクエストのパース、レスポンスの整形)。
+- **サービス層** — ビジネスロジック。19列の CSV 検証ルールおよび
+  全件収集(collect-all)の違反集約を含む。
+- **Prisma データ層** — 永続化のみ。
+
+CSV の列名は、ソース形式では日本語/半角カタカナである(例: 証記載保険者
+番号、ｻｰﾋﾞｽ種類ｺｰﾄﾞ、ｻｰﾋﾞｽ項目ｺｰﾄﾞ)。コード内 — TypeScript の型、Zod
+スキーマのキー、Prisma のモデル/カラム名 — では、これらを英語の camelCase
+識別子にマッピングする。マッピング表(ソースの列名 → camelCase 識別子)を
+文書化し、スキーマ/検証コードと合わせて維持しなければならない。これにより、
+マッピングは一度だけ導出され、3層すべてで再利用され、層ごとに個別に
+再導出されることがないようにする。
+
+依存関係スキャン(例: `npm audit`/Dependabot 相当)およびシークレット
+スキャンは CI の一部とし、マージをゲートする(Q7、選択肢A)。SAST および
+DAST は本プロジェクトでは明示的に**対象外**とする — 社内業務システムで
+あり、チームはこのスコープに対して追加のパイプライン投資は不要と判断した。

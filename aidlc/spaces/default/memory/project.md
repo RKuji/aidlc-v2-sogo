@@ -53,11 +53,19 @@
 <!-- Format: NEVER [behavior] (affirmed [date]) -->
 <!-- Example: NEVER throw exceptions across service layer boundaries (affirmed 2026-05-17) -->
 
+- NEVER CSV検証をフェイルファストとして扱わない(すなわち、最初の違反の後に行/ファイルの検証を中断しない) — 本プロジェクトのCSVインポートパイプラインでは全件収集(collect-all)が必須である (affirmed 2026-08-07, Q4)
+- NEVER 現在のスコープにおいて、SASTまたはDASTツールを本プロジェクトのCI/CDパイプラインに含めない — この社内業務システムについては明示的に対象外と宣言されている (affirmed 2026-08-07, Q7)
+
 ## Mandated
 
 <!-- Populated by practices-discovery affirmation gate. -->
 <!-- Format: ALWAYS [behavior] (affirmed [date]) -->
 <!-- Example: ALWAYS use Result<T,E> for fallible operations in service layer (affirmed 2026-05-17) -->
+
+- ALWAYS 確認済みの6つのテストツール(Vitest、Testcontainers、Storybook、MSW、Playwright、MagicPod)すべてを、`main`へのマージ前にブロッキングなCIチェックとして実行する — 本プロジェクトにおいて、非ブロッキング/据え置きの実行サイクルで動作するテストツールは存在しない (affirmed 2026-08-07, Q3)
+- ALWAYS CSVの1行における19列すべての検証違反(および全行にわたる違反)を、最初に検出した違反で停止するのではなく、単一の違反リストへ収集する — インポートパイプラインはCSV検証においてフェイルファストであってはならない (affirmed 2026-08-07, Q4)
+- ALWAYS 日本語/半角カタカナのCSV列名を、TypeScript/Zod/Prismaのコード内で英語のcamelCase識別子にマッピングし、3層すべて(API、サービス、データ)が参照する単一の文書化されたマッピング表(ソースの列名 → camelCase識別子)を裏付けとする (affirmed 2026-08-07, Q6)
+- ALWAYS 依存関係スキャンおよびシークレットスキャンをCI内で実行し、`main`へのマージをゲートする (affirmed 2026-08-07, Q7)
 
 ## Corrections
 
