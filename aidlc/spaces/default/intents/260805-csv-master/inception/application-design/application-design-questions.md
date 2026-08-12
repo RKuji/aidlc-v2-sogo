@@ -9,7 +9,7 @@ units-generationステージはSKIPのため、コンポーネント境界はこ
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. 2つの機能領域(取込: 検証+保存、表示: 検索+一覧)を、それぞれ独立したAPIルート・サービス・画面として設計する
 
 ## Q2. フロントエンドとバックエンドの通信方式は?
 
@@ -18,7 +18,7 @@ units-generationステージはSKIPのため、コンポーネント境界はこ
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. Next.jsのフロントエンド(ページ/コンポーネント)から、openapi-fetch経由でHono APIを呼び出す(OpenAPI契約に基づく型安全な通信)
 
 ## Q3. CSV検証ロジックの配置場所は?
 
@@ -27,7 +27,7 @@ units-generationステージはSKIPのため、コンポーネント境界はこ
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. サービス層に21列すべての検証ルールを実装する専用のバリデーションサービス(例: CsvValidationService)を置き、Zodスキーマは個々の列の形式検証に、サービス層のロジックはcollect-all集約に用いる
 
 ## Q4. データ保存の構造は?
 
@@ -36,7 +36,7 @@ units-generationステージはSKIPのため、コンポーネント境界はこ
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. 単位数表マスタを表す単一のPrismaモデル(テーブル)とし、保険者番号+サービス種類コード+サービス項目コード+適用開始年月日を一意キーとして上書き(upsert)する
 
 ## Q5. サービス間・コンポーネント間の通信パターンは?
 
@@ -45,7 +45,7 @@ units-generationステージはSKIPのため、コンポーネント境界はこ
 - C. Not yet defined
 - X. Other (please specify)
 
-[Answer]:
+[Answer]: A. すべて同期的なリクエスト/レスポンス(非同期メッセージング・イベント駆動は不要な規模)
 
 ## Assumptions & Open Questions
 
