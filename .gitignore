@@ -43,3 +43,6 @@ next-env.d.ts
 # aidlc
 .aidlc-sessions/
 .aidlc-hooks-health/
+
+# package
+aidlc-v2-sogo-package/

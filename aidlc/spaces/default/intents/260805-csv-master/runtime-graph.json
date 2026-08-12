@@ -2097,9 +2097,786 @@
     {
       "stage_slug": "code-generation",
       "started_at": "2026-08-12T00:29:22Z",
-      "completed_at": null,
+      "completed_at": "2026-08-12T02:04:00Z",
       "agent": "aidlc-developer-agent",
       "memory_path": "aidlc/spaces/default/intents/260805-csv-master/construction/code-generation/memory.md",
+      "memory_entries": 1,
+      "memory_breakdown": {
+        "interpretations": 0,
+        "deviations": 0,
+        "tradeoffs": 0,
+        "open_questions": 1
+      },
+      "sensor_firings": [
+        {
+          "id": "linter",
+          "fire_id": "271c844b",
+          "result": "passed",
+          "ts": "2026-08-12T00:58:15Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "7965a915",
+          "result": "passed",
+          "ts": "2026-08-12T00:58:16Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "513904bb",
+          "result": "passed",
+          "ts": "2026-08-12T00:58:18Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "88147226",
+          "result": "passed",
+          "ts": "2026-08-12T00:58:50Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "67768a3e",
+          "result": "passed",
+          "ts": "2026-08-12T00:58:51Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "c326f6e7",
+          "result": "passed",
+          "ts": "2026-08-12T00:59:22Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "a4368168",
+          "result": "passed",
+          "ts": "2026-08-12T00:59:22Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "2562b73b",
+          "result": "passed",
+          "ts": "2026-08-12T00:59:53Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "73281399",
+          "result": "passed",
+          "ts": "2026-08-12T00:59:54Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "6be8afa5",
+          "result": "passed",
+          "ts": "2026-08-12T01:00:05Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "3c4e7b25",
+          "result": "passed",
+          "ts": "2026-08-12T01:00:05Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "d2835a8b",
+          "result": "passed",
+          "ts": "2026-08-12T01:00:22Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "a895d159",
+          "result": "passed",
+          "ts": "2026-08-12T01:00:22Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "d8191060",
+          "result": "passed",
+          "ts": "2026-08-12T01:00:40Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "565042a2",
+          "result": "passed",
+          "ts": "2026-08-12T01:00:41Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "6c3c2e26",
+          "result": "passed",
+          "ts": "2026-08-12T01:00:58Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "50c24909",
+          "result": "passed",
+          "ts": "2026-08-12T01:00:59Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "0b7e4b57",
+          "result": "passed",
+          "ts": "2026-08-12T01:01:21Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "0a281481",
+          "result": "passed",
+          "ts": "2026-08-12T01:01:22Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "7fbd1e8f",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:22Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "dc6708f7",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:22Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "b3a072e2",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:29Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "7d1b2165",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:29Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "c6a59e9d",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:33Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "96f6da22",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:34Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "a5bc79fb",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:36Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "b0dde360",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:37Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "49c3f4c4",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:37Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "cce7e5f6",
+          "result": "passed",
+          "ts": "2026-08-12T01:02:37Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "65278d6d",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:07Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "1cbe20d5",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:07Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "3ac9fcc8",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:17Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "c26a51ba",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:17Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "07ee1c55",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:40Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "ab3f4fe5",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:40Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "6f270911",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:49Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "3a58a4d1",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:49Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "714967a8",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:55Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "a3fa413e",
+          "result": "passed",
+          "ts": "2026-08-12T01:03:55Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "e5f7d18d",
+          "result": "passed",
+          "ts": "2026-08-12T01:04:16Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "a6289139",
+          "result": "passed",
+          "ts": "2026-08-12T01:04:16Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "ee9fae16",
+          "result": "passed",
+          "ts": "2026-08-12T01:04:46Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "243b3e87",
+          "result": "passed",
+          "ts": "2026-08-12T01:04:47Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "310838ba",
+          "result": "passed",
+          "ts": "2026-08-12T01:04:57Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "04966c34",
+          "result": "passed",
+          "ts": "2026-08-12T01:04:57Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "3e09120e",
+          "result": "passed",
+          "ts": "2026-08-12T01:05:20Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "dab9c9d8",
+          "result": "passed",
+          "ts": "2026-08-12T01:05:21Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "a1930410",
+          "result": "passed",
+          "ts": "2026-08-12T01:05:27Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "14670226",
+          "result": "passed",
+          "ts": "2026-08-12T01:05:28Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "f79503d7",
+          "result": "passed",
+          "ts": "2026-08-12T01:05:43Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "6af3cbd5",
+          "result": "passed",
+          "ts": "2026-08-12T01:05:43Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "a1b44cbf",
+          "result": "passed",
+          "ts": "2026-08-12T01:06:01Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "5694df4b",
+          "result": "passed",
+          "ts": "2026-08-12T01:06:01Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "448ef8d6",
+          "result": "passed",
+          "ts": "2026-08-12T01:06:44Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "57519130",
+          "result": "passed",
+          "ts": "2026-08-12T01:06:44Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "788bd386",
+          "result": "passed",
+          "ts": "2026-08-12T01:06:52Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "5a2f9e0c",
+          "result": "passed",
+          "ts": "2026-08-12T01:07:01Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "91bbbdda",
+          "result": "passed",
+          "ts": "2026-08-12T01:07:40Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "730bc122",
+          "result": "passed",
+          "ts": "2026-08-12T01:07:57Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "e507ad8a",
+          "result": "passed",
+          "ts": "2026-08-12T01:08:03Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "552d434a",
+          "result": "failed",
+          "ts": "2026-08-12T01:08:08Z",
+          "detail_path": "aidlc/spaces/default/intents/260805-csv-master/.aidlc-sensors/code-generation/type-check-552d434a.md"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "a31371e0",
+          "result": "failed",
+          "ts": "2026-08-12T01:08:13Z",
+          "detail_path": "aidlc/spaces/default/intents/260805-csv-master/.aidlc-sensors/code-generation/type-check-a31371e0.md"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "05adfc71",
+          "result": "passed",
+          "ts": "2026-08-12T01:08:18Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "a086ec1c",
+          "result": "passed",
+          "ts": "2026-08-12T01:08:41Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "42e61013",
+          "result": "passed",
+          "ts": "2026-08-12T01:08:48Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "deb71460",
+          "result": "passed",
+          "ts": "2026-08-12T01:08:51Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "47cf6b88",
+          "result": "passed",
+          "ts": "2026-08-12T01:08:56Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "73337990",
+          "result": "passed",
+          "ts": "2026-08-12T01:08:58Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "ad946947",
+          "result": "passed",
+          "ts": "2026-08-12T01:09:13Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "b20e3ef3",
+          "result": "passed",
+          "ts": "2026-08-12T01:09:13Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "141eb69d",
+          "result": "passed",
+          "ts": "2026-08-12T01:09:14Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "d006f733",
+          "result": "passed",
+          "ts": "2026-08-12T01:09:14Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "7512ec79",
+          "result": "passed",
+          "ts": "2026-08-12T01:09:20Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "b74e43c9",
+          "result": "passed",
+          "ts": "2026-08-12T01:09:20Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "f7ebb550",
+          "result": "passed",
+          "ts": "2026-08-12T01:09:50Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "a1585c2c",
+          "result": "passed",
+          "ts": "2026-08-12T01:10:04Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "15b543ef",
+          "result": "passed",
+          "ts": "2026-08-12T01:10:17Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "9fffae31",
+          "result": "passed",
+          "ts": "2026-08-12T01:10:18Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "9f0629da",
+          "result": "passed",
+          "ts": "2026-08-12T01:10:45Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "0859b935",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:06Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "e4ae68f4",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:06Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "5079a577",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:07Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "5982950b",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:07Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "29d0268a",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:19Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "36a80e2d",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:24Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "2a64d273",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:26Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "771ff88d",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:43Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "ee17362d",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:43Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "18734ca2",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:55Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "05d1cc5b",
+          "result": "passed",
+          "ts": "2026-08-12T01:11:56Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "98a3ede2",
+          "result": "passed",
+          "ts": "2026-08-12T01:12:02Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "ac0f40ae",
+          "result": "passed",
+          "ts": "2026-08-12T01:12:02Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "6e3d9004",
+          "result": "passed",
+          "ts": "2026-08-12T01:12:12Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "5dc7b4de",
+          "result": "passed",
+          "ts": "2026-08-12T01:12:12Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "5b6c7796",
+          "result": "passed",
+          "ts": "2026-08-12T01:16:18Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "00aa23de",
+          "result": "passed",
+          "ts": "2026-08-12T01:16:28Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "bc9867d7",
+          "result": "failed",
+          "ts": "2026-08-12T01:16:40Z",
+          "detail_path": "aidlc/spaces/default/intents/260805-csv-master/.aidlc-sensors/code-generation/type-check-bc9867d7.md"
+        },
+        {
+          "id": "linter",
+          "fire_id": "3991964f",
+          "result": "passed",
+          "ts": "2026-08-12T01:18:17Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "17c72398",
+          "result": "passed",
+          "ts": "2026-08-12T01:18:18Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "300ddd97",
+          "result": "passed",
+          "ts": "2026-08-12T01:18:49Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "e8eaac26",
+          "result": "passed",
+          "ts": "2026-08-12T01:18:49Z"
+        },
+        {
+          "id": "linter",
+          "fire_id": "1a1482ce",
+          "result": "passed",
+          "ts": "2026-08-12T01:19:56Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "d3da1cc5",
+          "result": "passed",
+          "ts": "2026-08-12T01:19:57Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "c03dc0b6",
+          "result": "passed",
+          "ts": "2026-08-12T01:20:27Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "9b9bcacc",
+          "result": "passed",
+          "ts": "2026-08-12T01:20:51Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "11f3e847",
+          "result": "passed",
+          "ts": "2026-08-12T01:20:59Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "6fd153d5",
+          "result": "passed",
+          "ts": "2026-08-12T01:22:20Z"
+        },
+        {
+          "id": "type-check",
+          "fire_id": "c3bb7a72",
+          "result": "passed",
+          "ts": "2026-08-12T01:22:29Z"
+        }
+      ],
+      "outcome": "approved",
+      "learnings_captured": {
+        "from_orchestrator": 1,
+        "from_user_addition": 0
+      }
+    },
+    {
+      "stage_slug": "build-and-test",
+      "started_at": "2026-08-12T02:04:00Z",
+      "completed_at": "2026-08-12T03:03:08Z",
+      "agent": "aidlc-quality-agent",
+      "memory_path": "aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/memory.md",
+      "memory_entries": 2,
+      "memory_breakdown": {
+        "interpretations": 1,
+        "deviations": 1,
+        "tradeoffs": 0,
+        "open_questions": 0
+      },
+      "sensor_firings": [
+        {
+          "id": "required-sections",
+          "fire_id": "090f9630",
+          "result": "passed",
+          "ts": "2026-08-12T02:09:25Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "e041fef2",
+          "result": "passed",
+          "ts": "2026-08-12T02:09:25Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "66365eab",
+          "result": "passed",
+          "ts": "2026-08-12T02:09:38Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "c18ad1a5",
+          "result": "passed",
+          "ts": "2026-08-12T02:09:38Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "df82c396",
+          "result": "passed",
+          "ts": "2026-08-12T02:09:50Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "cb10affe",
+          "result": "passed",
+          "ts": "2026-08-12T02:09:50Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "bca86ea1",
+          "result": "passed",
+          "ts": "2026-08-12T02:10:06Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "74eb40c6",
+          "result": "passed",
+          "ts": "2026-08-12T02:10:06Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "c591373a",
+          "result": "passed",
+          "ts": "2026-08-12T02:10:23Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "03d33aa7",
+          "result": "passed",
+          "ts": "2026-08-12T02:10:23Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "4f552a5e",
+          "result": "passed",
+          "ts": "2026-08-12T02:10:38Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "ca28c063",
+          "result": "passed",
+          "ts": "2026-08-12T02:10:38Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "f299554d",
+          "result": "passed",
+          "ts": "2026-08-12T02:11:13Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "414c2ec2",
+          "result": "passed",
+          "ts": "2026-08-12T02:11:13Z"
+        }
+      ],
+      "outcome": "approved",
+      "learnings_captured": {
+        "from_orchestrator": 1,
+        "from_user_addition": 0
+      }
+    },
+    {
+      "stage_slug": "ci-pipeline",
+      "started_at": "2026-08-12T03:03:08Z",
+      "completed_at": null,
+      "agent": "aidlc-pipeline-deploy-agent",
+      "memory_path": "aidlc/spaces/default/intents/260805-csv-master/construction/ci-pipeline/memory.md",
       "memory_entries": null,
       "memory_breakdown": null,
       "sensor_firings": [],

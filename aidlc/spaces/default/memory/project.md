@@ -25,6 +25,7 @@
 
 <!-- Project-specific specialisation. -->
 
+- Testcontainersを用いる統合テストはDockerデーモンへの実行権限が無い環境(ローカル開発機やサンドボックス等)では実行できずスキップされうる。これはコードの欠陥ではなく環境制約である。そのためCI環境(Dockerアクセス可能)での実行結果を、Testcontainers統合テストに関する正式な検証結果として扱う (learned 2026-08-12, Stage build-and-test) (learned 2026-08-12) <!-- cid:build-and-test:c2 -->
 ## Deployment
 
 <!-- Project-specific specialisation. -->
@@ -43,6 +44,7 @@
 <!-- Format: DECIDED: [decision] (Stage [slug], [date]) -->
 
 - DECIDED: 単位数表マスタCSVの検証は全22列中21列(予備項目を除くすべての列)に適用する。予備項目(CSV定義表で定義欄が空の列)のみ検証対象外とする — 定義が無い列には検証すべき形式的ルールが存在しないため (Stage scope-definition, 2026-08-05; 列数を19→21に訂正 2026-08-07) (learned 2026-08-05) <!-- cid:scope-definition:c1 -->
+- DECIDED: Storybookのビルド/dev(build-storybook, storybook dev)は現在、@storybook/nextjs(8.6.18)とNext.js(14.2.35)の組み合わせで既知のアップストリーム互換性問題(SB_BUILDER-WEBPACK5_0002、webpackインスタンス不一致)により失敗する。作成済みの.stories.tsxファイル自体は正しいコードであり欠陥ではない。team-practices.mdのTesting Posture(6ツール全てCIブロッキング必須)を満たすには、ci-pipelineステージ着手前にNext.jsダウングレードまたはStorybookメジャーアップグレード(9.x/10.x)による解決が必要 (Stage code-generation, Bolt csv-import-display, 2026-08-12) (learned 2026-08-12) <!-- cid:code-generation:oq1 -->
 ## Scope Overrides
 
 <!-- Custom scope rules for this project. -->

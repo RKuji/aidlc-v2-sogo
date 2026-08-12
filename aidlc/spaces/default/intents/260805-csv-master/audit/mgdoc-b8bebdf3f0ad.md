@@ -9774,3 +9774,3106 @@
 **Message**: Enough evidence gathered. Here is the concise report.\n\n## Findings (before you run this stage)\n\n**1. SKILL.md §CONSTRUCTION Flow does not exist.** `stage-protocol.md` (lines 110, 149, 410, 420) and `.
 
 ---
+
+## Human Turn
+**Timestamp**: 2026-08-12T00:38:01Z
+**Event**: HUMAN_TURN
+
+---
+
+## Worktree Created
+**Timestamp**: 2026-08-12T00:38:39Z
+**Event**: WORKTREE_CREATED
+**Bolt slug**: csv-import-display
+**Worktree path**: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display
+**Branch name**: bolt-csv-import-display
+**Base branch**: main
+
+---
+
+## Bolt Started
+**Timestamp**: 2026-08-12T00:38:44Z
+**Event**: BOLT_STARTED
+**Bolt names**: csv-import-display
+**Batch number**: 1
+**Walking skeleton**: true
+**Bolt slug**: csv-import-display
+
+---
+
+## State Forked
+**Timestamp**: 2026-08-12T00:38:44Z
+**Event**: STATE_FORKED
+**Bolt slug**: csv-import-display
+**Worktree path**: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display
+**Source state hash**: 7b8b45cd4f23733800646ecf02e334c1e2aaed58dfe05d2bbecb7d6ee22736e3
+**Target state hash**: 7b8b45cd4f23733800646ecf02e334c1e2aaed58dfe05d2bbecb7d6ee22736e3
+
+---
+
+## Bolt Failed
+**Timestamp**: 2026-08-12T00:38:44Z
+**Event**: BOLT_FAILED
+**Failed Bolt**: csv-import-display
+**Bolt slug**: csv-import-display
+**Error summary**: audit-fork-failed: {"error":"worktree audit already exists at /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display/aidlc/spaces/default/intents/260805-csv-master/audit/mgdoc-b8bebdf3f0ad.md; refusing to overwrite (audit-fork is one-shot)"}\n
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T00:48:52Z
+**Event**: HUMAN_TURN
+
+---
+
+## Worktree Discarded
+**Timestamp**: 2026-08-12T00:49:49Z
+**Event**: WORKTREE_DISCARDED
+**Bolt slug**: csv-import-display
+**Worktree path**: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display
+**Reason**: agent-discard
+
+---
+
+## Worktree Created
+**Timestamp**: 2026-08-12T00:49:59Z
+**Event**: WORKTREE_CREATED
+**Bolt slug**: csv-import-display
+**Worktree path**: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display
+**Branch name**: bolt-csv-import-display
+**Base branch**: main
+
+---
+
+## Bolt Started
+**Timestamp**: 2026-08-12T00:50:13Z
+**Event**: BOLT_STARTED
+**Bolt names**: csv-import-display
+**Batch number**: 1
+**Walking skeleton**: true
+**Bolt slug**: csv-import-display
+
+---
+
+## Error Logged
+**Timestamp**: 2026-08-12T00:50:13Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state --project-dir /home/mgdoc/work/src/sogo fork --slug csv-import-display --repo aidlc-v2-sogo-package
+**Error**: [slug=csv-import-display] slug already in Bolt Refs (current: [csv-import-display]). If a prior fork failed mid-operation, run 'aidlc-worktree discard --slug csv-import-display' and 'aidlc-state.ts merge --slug csv-import-display' (which will exit "already merged" cleanly) or remove the stale entry from main state, then retry.
+
+---
+
+## Bolt Failed
+**Timestamp**: 2026-08-12T00:50:13Z
+**Event**: BOLT_FAILED
+**Failed Bolt**: csv-import-display
+**Bolt slug**: csv-import-display
+**Error summary**: state-fork-failed: {"error":"[slug=csv-import-display] slug already in Bolt Refs (current: [csv-import-display]). If a prior fork failed mid-operation, run 'aidlc-worktree discard --slug csv-import-display' and 'aidlc-state.ts merge --slug csv-import-display' (which will exit \"already merged\" cleanly) or remove the stale entry from main state, then retry."}\n
+
+---
+
+## Error Logged
+**Timestamp**: 2026-08-12T00:50:19Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state merge --slug csv-import-display
+**Error**: [slug=csv-import-display] worktree state file does not exist: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display/aidlc/spaces/default/intents/260805-csv-master/aidlc-state.md. Was fork run?
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-08-12T00:51:01Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/aidlc-state.md
+**Context**: aidlc-state.md
+
+---
+
+## Bolt Started
+**Timestamp**: 2026-08-12T00:51:07Z
+**Event**: BOLT_STARTED
+**Bolt names**: csv-import-display
+**Batch number**: 1
+**Walking skeleton**: true
+**Bolt slug**: csv-import-display
+
+---
+
+## State Forked
+**Timestamp**: 2026-08-12T00:51:07Z
+**Event**: STATE_FORKED
+**Bolt slug**: csv-import-display
+**Worktree path**: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display
+**Source state hash**: 3c1e656fe5b3478a7096a64fa77f6b0cf3e58f718dd3b9b66e3cbe8f5190fae2
+**Target state hash**: 3c1e656fe5b3478a7096a64fa77f6b0cf3e58f718dd3b9b66e3cbe8f5190fae2
+
+---
+
+## Audit Forked
+**Timestamp**: 2026-08-12T00:51:07Z
+**Event**: AUDIT_FORKED
+**Bolt slug**: csv-import-display
+**Source Audit Hash**: 67e1ec14e74a351723c6c5d722b13fb7c9e3bd44d0d28ceb0a1438a1b4a3b8b2
+**Fork Boundary**: 282011
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T00:55:28Z
+**Event**: HUMAN_TURN
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:58:15Z
+**Event**: SENSOR_FIRED
+**Fire id**: 271c844b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/tailwind.config.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:58:16Z
+**Event**: SENSOR_PASSED
+**Fire id**: 271c844b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/tailwind.config.ts
+**Duration ms**: 673
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:58:16Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7965a915
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/tailwind.config.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:58:18Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7965a915
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/tailwind.config.ts
+**Duration ms**: 2228
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:58:18Z
+**Event**: SENSOR_FIRED
+**Fire id**: 513904bb
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/postcss.config.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:58:19Z
+**Event**: SENSOR_PASSED
+**Fire id**: 513904bb
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/postcss.config.js
+**Duration ms**: 449
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:58:50Z
+**Event**: SENSOR_FIRED
+**Fire id**: 88147226
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/column-mapping.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:58:51Z
+**Event**: SENSOR_PASSED
+**Fire id**: 88147226
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/column-mapping.ts
+**Duration ms**: 452
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:58:51Z
+**Event**: SENSOR_FIRED
+**Fire id**: 67768a3e
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/column-mapping.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:58:51Z
+**Event**: SENSOR_PASSED
+**Fire id**: 67768a3e
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/column-mapping.ts
+**Duration ms**: 310
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:59:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: c326f6e7
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/column-mapping.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:59:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: c326f6e7
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/column-mapping.ts
+**Duration ms**: 432
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:59:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: a4368168
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/column-mapping.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:59:23Z
+**Event**: SENSOR_PASSED
+**Fire id**: a4368168
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/column-mapping.ts
+**Duration ms**: 304
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:59:53Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2562b73b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/schema/master-data-schema.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:59:54Z
+**Event**: SENSOR_PASSED
+**Fire id**: 2562b73b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/schema/master-data-schema.ts
+**Duration ms**: 434
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T00:59:54Z
+**Event**: SENSOR_FIRED
+**Fire id**: 73281399
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/schema/master-data-schema.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T00:59:54Z
+**Event**: SENSOR_PASSED
+**Fire id**: 73281399
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/schema/master-data-schema.ts
+**Duration ms**: 299
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:00:05Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6be8afa5
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/types.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:00:05Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6be8afa5
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/types.ts
+**Duration ms**: 436
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:00:05Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3c4e7b25
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/types.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:00:06Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3c4e7b25
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/types.ts
+**Duration ms**: 297
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:00:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: d2835a8b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/services/csv-parser-service.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:00:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: d2835a8b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/services/csv-parser-service.ts
+**Duration ms**: 436
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:00:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: a895d159
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/services/csv-parser-service.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:00:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: a895d159
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/services/csv-parser-service.ts
+**Duration ms**: 299
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:00:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: d8191060
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/services/csv-validation-service.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:00:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: d8191060
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/services/csv-validation-service.ts
+**Duration ms**: 435
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:00:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 565042a2
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/services/csv-validation-service.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:00:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 565042a2
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/services/csv-validation-service.ts
+**Duration ms**: 301
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:00:58Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6c3c2e26
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/prisma.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:00:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6c3c2e26
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/prisma.ts
+**Duration ms**: 435
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:00:59Z
+**Event**: SENSOR_FIRED
+**Fire id**: 50c24909
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/prisma.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:00:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: 50c24909
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/prisma.ts
+**Duration ms**: 298
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:01:21Z
+**Event**: SENSOR_FIRED
+**Fire id**: 0b7e4b57
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:01:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: 0b7e4b57
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+**Duration ms**: 434
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:01:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: 0a281481
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:01:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: 0a281481
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+**Duration ms**: 300
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7fbd1e8f
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/csv-import-route.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7fbd1e8f
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/csv-import-route.ts
+**Duration ms**: 432
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: dc6708f7
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/csv-import-route.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: dc6708f7
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/csv-import-route.ts
+**Duration ms**: 302
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:29Z
+**Event**: SENSOR_FIRED
+**Fire id**: b3a072e2
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/filter-options-route.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:29Z
+**Event**: SENSOR_PASSED
+**Fire id**: b3a072e2
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/filter-options-route.ts
+**Duration ms**: 438
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:29Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7d1b2165
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/filter-options-route.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:30Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7d1b2165
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/filter-options-route.ts
+**Duration ms**: 301
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:33Z
+**Event**: SENSOR_FIRED
+**Fire id**: c6a59e9d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/search-route.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:34Z
+**Event**: SENSOR_PASSED
+**Fire id**: c6a59e9d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/search-route.ts
+**Duration ms**: 438
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:34Z
+**Event**: SENSOR_FIRED
+**Fire id**: 96f6da22
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/search-route.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:34Z
+**Event**: SENSOR_PASSED
+**Fire id**: 96f6da22
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/routes/search-route.ts
+**Duration ms**: 303
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:36Z
+**Event**: SENSOR_FIRED
+**Fire id**: a5bc79fb
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/app.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:36Z
+**Event**: SENSOR_PASSED
+**Fire id**: a5bc79fb
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/app.ts
+**Duration ms**: 432
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: b0dde360
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/app.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:37Z
+**Event**: SENSOR_PASSED
+**Fire id**: b0dde360
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/app.ts
+**Duration ms**: 309
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: 49c3f4c4
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/api/[[...route]]/route.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:37Z
+**Event**: SENSOR_PASSED
+**Fire id**: 49c3f4c4
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/api/[[...route]]/route.ts
+**Duration ms**: 440
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:02:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: cce7e5f6
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/api/[[...route]]/route.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:02:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: cce7e5f6
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/api/[[...route]]/route.ts
+**Duration ms**: 314
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:07Z
+**Event**: SENSOR_FIRED
+**Fire id**: 65278d6d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/api-types.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:07Z
+**Event**: SENSOR_PASSED
+**Fire id**: 65278d6d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/api-types.ts
+**Duration ms**: 435
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:07Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1cbe20d5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/api-types.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:07Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1cbe20d5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/shared/api-types.ts
+**Duration ms**: 303
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:17Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3ac9fcc8
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:17Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3ac9fcc8
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+**Duration ms**: 435
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:17Z
+**Event**: SENSOR_FIRED
+**Fire id**: c26a51ba
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:18Z
+**Event**: SENSOR_PASSED
+**Fire id**: c26a51ba
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+**Duration ms**: 303
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: 07ee1c55
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/csv-import-route.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: 07ee1c55
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/csv-import-route.test.ts
+**Duration ms**: 441
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: ab3f4fe5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/csv-import-route.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: ab3f4fe5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/csv-import-route.test.ts
+**Duration ms**: 304
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:49Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6f270911
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/filter-options-route.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:49Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6f270911
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/filter-options-route.test.ts
+**Duration ms**: 440
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:49Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3a58a4d1
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/filter-options-route.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:49Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3a58a4d1
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/filter-options-route.test.ts
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:55Z
+**Event**: SENSOR_FIRED
+**Fire id**: 714967a8
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/search-route.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:55Z
+**Event**: SENSOR_PASSED
+**Fire id**: 714967a8
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/search-route.test.ts
+**Duration ms**: 439
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:03:55Z
+**Event**: SENSOR_FIRED
+**Fire id**: a3fa413e
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/search-route.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:03:56Z
+**Event**: SENSOR_PASSED
+**Fire id**: a3fa413e
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/routes/search-route.test.ts
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:04:16Z
+**Event**: SENSOR_FIRED
+**Fire id**: e5f7d18d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/services/csv-parser-service.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:04:16Z
+**Event**: SENSOR_PASSED
+**Fire id**: e5f7d18d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/services/csv-parser-service.test.ts
+**Duration ms**: 434
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:04:16Z
+**Event**: SENSOR_FIRED
+**Fire id**: a6289139
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/services/csv-parser-service.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:04:16Z
+**Event**: SENSOR_PASSED
+**Fire id**: a6289139
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/services/csv-parser-service.test.ts
+**Duration ms**: 307
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:04:46Z
+**Event**: SENSOR_FIRED
+**Fire id**: ee9fae16
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/services/csv-validation-service.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:04:47Z
+**Event**: SENSOR_PASSED
+**Fire id**: ee9fae16
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/services/csv-validation-service.test.ts
+**Duration ms**: 445
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:04:47Z
+**Event**: SENSOR_FIRED
+**Fire id**: 243b3e87
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/services/csv-validation-service.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:04:47Z
+**Event**: SENSOR_PASSED
+**Fire id**: 243b3e87
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/server/services/csv-validation-service.test.ts
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:04:57Z
+**Event**: SENSOR_FIRED
+**Fire id**: 310838ba
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/shared/column-mapping.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:04:57Z
+**Event**: SENSOR_PASSED
+**Fire id**: 310838ba
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/shared/column-mapping.test.ts
+**Duration ms**: 436
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:04:57Z
+**Event**: SENSOR_FIRED
+**Fire id**: 04966c34
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/shared/column-mapping.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:04:58Z
+**Event**: SENSOR_PASSED
+**Fire id**: 04966c34
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/shared/column-mapping.test.ts
+**Duration ms**: 307
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:05:20Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3e09120e
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:05:21Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3e09120e
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+**Duration ms**: 441
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:05:21Z
+**Event**: SENSOR_FIRED
+**Fire id**: dab9c9d8
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:05:21Z
+**Event**: SENSOR_PASSED
+**Fire id**: dab9c9d8
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+**Duration ms**: 302
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:05:27Z
+**Event**: SENSOR_FIRED
+**Fire id**: a1930410
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:05:28Z
+**Event**: SENSOR_PASSED
+**Fire id**: a1930410
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+**Duration ms**: 438
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:05:28Z
+**Event**: SENSOR_FIRED
+**Fire id**: 14670226
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:05:28Z
+**Event**: SENSOR_PASSED
+**Fire id**: 14670226
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:05:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: f79503d7
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:05:43Z
+**Event**: SENSOR_PASSED
+**Fire id**: f79503d7
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+**Duration ms**: 429
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:05:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6af3cbd5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:05:43Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6af3cbd5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/server/repositories/master-data-repository.ts
+**Duration ms**: 308
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:06:01Z
+**Event**: SENSOR_FIRED
+**Fire id**: a1b44cbf
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/integration/master-data-repository.integration.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:06:01Z
+**Event**: SENSOR_PASSED
+**Fire id**: a1b44cbf
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/integration/master-data-repository.integration.test.ts
+**Duration ms**: 438
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:06:01Z
+**Event**: SENSOR_FIRED
+**Fire id**: 5694df4b
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/integration/master-data-repository.integration.test.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:06:01Z
+**Event**: SENSOR_PASSED
+**Fire id**: 5694df4b
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/integration/master-data-repository.integration.test.ts
+**Duration ms**: 317
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:06:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: 448ef8d6
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/cn.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:06:44Z
+**Event**: SENSOR_PASSED
+**Fire id**: 448ef8d6
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/cn.ts
+**Duration ms**: 432
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:06:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: 57519130
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/cn.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:06:44Z
+**Event**: SENSOR_PASSED
+**Fire id**: 57519130
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/cn.ts
+**Duration ms**: 305
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:06:52Z
+**Event**: SENSOR_FIRED
+**Fire id**: 788bd386
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/ui/button.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:06:52Z
+**Event**: SENSOR_PASSED
+**Fire id**: 788bd386
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/ui/button.tsx
+**Duration ms**: 320
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:07:01Z
+**Event**: SENSOR_FIRED
+**Fire id**: 5a2f9e0c
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/ui/select.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:07:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: 5a2f9e0c
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/ui/select.tsx
+**Duration ms**: 301
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:07:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: 91bbbdda
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/ImportUpload/ImportUploadComponent.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:07:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: 91bbbdda
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/ImportUpload/ImportUploadComponent.tsx
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:07:57Z
+**Event**: SENSOR_FIRED
+**Fire id**: 730bc122
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:07:57Z
+**Event**: SENSOR_PASSED
+**Fire id**: 730bc122
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:03Z
+**Event**: SENSOR_FIRED
+**Fire id**: e507ad8a
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:08:03Z
+**Event**: SENSOR_PASSED
+**Fire id**: e507ad8a
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+**Duration ms**: 310
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:08Z
+**Event**: SENSOR_FIRED
+**Fire id**: 552d434a
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-08-12T01:08:08Z
+**Event**: SENSOR_FAILED
+**Fire id**: 552d434a
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+**Detail path**: aidlc/spaces/default/intents/260805-csv-master/.aidlc-sensors/code-generation/type-check-552d434a.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:13Z
+**Event**: SENSOR_FIRED
+**Fire id**: a31371e0
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-08-12T01:08:14Z
+**Event**: SENSOR_FAILED
+**Fire id**: a31371e0
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+**Detail path**: aidlc/spaces/default/intents/260805-csv-master/.aidlc-sensors/code-generation/type-check-a31371e0.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:18Z
+**Event**: SENSOR_FIRED
+**Fire id**: 05adfc71
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:08:18Z
+**Event**: SENSOR_PASSED
+**Fire id**: 05adfc71
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.tsx
+**Duration ms**: 307
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: a086ec1c
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:08:42Z
+**Event**: SENSOR_PASSED
+**Fire id**: a086ec1c
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.tsx
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:48Z
+**Event**: SENSOR_FIRED
+**Fire id**: 42e61013
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/layout.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:08:49Z
+**Event**: SENSOR_PASSED
+**Fire id**: 42e61013
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/layout.tsx
+**Duration ms**: 303
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:51Z
+**Event**: SENSOR_FIRED
+**Fire id**: deb71460
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/page.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:08:51Z
+**Event**: SENSOR_PASSED
+**Fire id**: deb71460
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/page.tsx
+**Duration ms**: 307
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:56Z
+**Event**: SENSOR_FIRED
+**Fire id**: 47cf6b88
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/import/page.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:08:57Z
+**Event**: SENSOR_PASSED
+**Fire id**: 47cf6b88
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/import/page.tsx
+**Duration ms**: 310
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:08:58Z
+**Event**: SENSOR_FIRED
+**Fire id**: 73337990
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/search/page.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:08:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: 73337990
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/search/page.tsx
+**Duration ms**: 312
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:09:13Z
+**Event**: SENSOR_FIRED
+**Fire id**: ad946947
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/msw/handlers.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:09:13Z
+**Event**: SENSOR_PASSED
+**Fire id**: ad946947
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/msw/handlers.ts
+**Duration ms**: 436
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:09:13Z
+**Event**: SENSOR_FIRED
+**Fire id**: b20e3ef3
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/msw/handlers.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:09:14Z
+**Event**: SENSOR_PASSED
+**Fire id**: b20e3ef3
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/msw/handlers.ts
+**Duration ms**: 308
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:09:14Z
+**Event**: SENSOR_FIRED
+**Fire id**: 141eb69d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/msw/server.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:09:14Z
+**Event**: SENSOR_PASSED
+**Fire id**: 141eb69d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/msw/server.ts
+**Duration ms**: 444
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:09:14Z
+**Event**: SENSOR_FIRED
+**Fire id**: d006f733
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/msw/server.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:09:15Z
+**Event**: SENSOR_PASSED
+**Fire id**: d006f733
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/msw/server.ts
+**Duration ms**: 307
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:09:20Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7512ec79
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:09:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7512ec79
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+**Duration ms**: 433
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:09:20Z
+**Event**: SENSOR_FIRED
+**Fire id**: b74e43c9
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:09:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: b74e43c9
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+**Duration ms**: 304
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:09:50Z
+**Event**: SENSOR_FIRED
+**Fire id**: f7ebb550
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/SearchResultsComponent.test.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:09:50Z
+**Event**: SENSOR_PASSED
+**Fire id**: f7ebb550
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/SearchResultsComponent.test.tsx
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:10:04Z
+**Event**: SENSOR_FIRED
+**Fire id**: a1585c2c
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/ImportUploadComponent.test.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:10:04Z
+**Event**: SENSOR_PASSED
+**Fire id**: a1585c2c
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/ImportUploadComponent.test.tsx
+**Duration ms**: 310
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:10:17Z
+**Event**: SENSOR_FIRED
+**Fire id**: 15b543ef
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:10:18Z
+**Event**: SENSOR_PASSED
+**Fire id**: 15b543ef
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+**Duration ms**: 433
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:10:18Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9fffae31
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:10:18Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9fffae31
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+**Duration ms**: 304
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:10:45Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9f0629da
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/SearchFilterComponent.test.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:10:46Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9f0629da
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/SearchFilterComponent.test.tsx
+**Duration ms**: 317
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: 0859b935
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/.storybook/main.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:06Z
+**Event**: SENSOR_PASSED
+**Fire id**: 0859b935
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/.storybook/main.ts
+**Duration ms**: 449
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: e4ae68f4
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/.storybook/main.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:06Z
+**Event**: SENSOR_PASSED
+**Fire id**: e4ae68f4
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/.storybook/main.ts
+**Duration ms**: 310
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:07Z
+**Event**: SENSOR_FIRED
+**Fire id**: 5079a577
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/.storybook/preview.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:07Z
+**Event**: SENSOR_PASSED
+**Fire id**: 5079a577
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/.storybook/preview.ts
+**Duration ms**: 433
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:07Z
+**Event**: SENSOR_FIRED
+**Fire id**: 5982950b
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/.storybook/preview.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:07Z
+**Event**: SENSOR_PASSED
+**Fire id**: 5982950b
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/.storybook/preview.ts
+**Duration ms**: 306
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:19Z
+**Event**: SENSOR_FIRED
+**Fire id**: 29d0268a
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/ImportUpload/ImportUploadComponent.stories.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:19Z
+**Event**: SENSOR_PASSED
+**Fire id**: 29d0268a
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/ImportUpload/ImportUploadComponent.stories.tsx
+**Duration ms**: 305
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:24Z
+**Event**: SENSOR_FIRED
+**Fire id**: 36a80e2d
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.stories.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:24Z
+**Event**: SENSOR_PASSED
+**Fire id**: 36a80e2d
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchResults/SearchResultsComponent.stories.tsx
+**Duration ms**: 308
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:26Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2a64d273
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.stories.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:26Z
+**Event**: SENSOR_PASSED
+**Fire id**: 2a64d273
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.stories.tsx
+**Duration ms**: 314
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: 771ff88d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/vitest.config.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:43Z
+**Event**: SENSOR_PASSED
+**Fire id**: 771ff88d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/vitest.config.ts
+**Duration ms**: 437
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: ee17362d
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/vitest.config.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:44Z
+**Event**: SENSOR_PASSED
+**Fire id**: ee17362d
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/vitest.config.ts
+**Duration ms**: 308
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:55Z
+**Event**: SENSOR_FIRED
+**Fire id**: 18734ca2
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/vitest.integration.config.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:56Z
+**Event**: SENSOR_PASSED
+**Fire id**: 18734ca2
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/vitest.integration.config.ts
+**Duration ms**: 431
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:11:56Z
+**Event**: SENSOR_FIRED
+**Fire id**: 05d1cc5b
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/vitest.integration.config.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:11:56Z
+**Event**: SENSOR_PASSED
+**Fire id**: 05d1cc5b
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/vitest.integration.config.ts
+**Duration ms**: 308
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:12:02Z
+**Event**: SENSOR_FIRED
+**Fire id**: 98a3ede2
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/playwright.config.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:12:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: 98a3ede2
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/playwright.config.ts
+**Duration ms**: 429
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:12:02Z
+**Event**: SENSOR_FIRED
+**Fire id**: ac0f40ae
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/playwright.config.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:12:03Z
+**Event**: SENSOR_PASSED
+**Fire id**: ac0f40ae
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/playwright.config.ts
+**Duration ms**: 309
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:12:12Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6e3d9004
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/e2e/navigation.spec.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:12:12Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6e3d9004
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/e2e/navigation.spec.ts
+**Duration ms**: 439
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:12:12Z
+**Event**: SENSOR_FIRED
+**Fire id**: 5dc7b4de
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/e2e/navigation.spec.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:12:12Z
+**Event**: SENSOR_PASSED
+**Fire id**: 5dc7b4de
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/e2e/navigation.spec.ts
+**Duration ms**: 308
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:16:18Z
+**Event**: SENSOR_FIRED
+**Fire id**: 5b6c7796
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/layout.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:16:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: 5b6c7796
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/layout.tsx
+**Duration ms**: 3815
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:16:28Z
+**Event**: SENSOR_FIRED
+**Fire id**: 00aa23de
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.stories.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:16:31Z
+**Event**: SENSOR_PASSED
+**Fire id**: 00aa23de
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.stories.tsx
+**Duration ms**: 2525
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:16:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: bc9867d7
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/SearchFilterComponent.test.tsx
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-08-12T01:16:43Z
+**Event**: SENSOR_FAILED
+**Fire id**: bc9867d7
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/SearchFilterComponent.test.tsx
+**Detail path**: aidlc/spaces/default/intents/260805-csv-master/.aidlc-sensors/code-generation/type-check-bc9867d7.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:18:17Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3991964f
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:18:18Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3991964f
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+**Duration ms**: 505
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:18:18Z
+**Event**: SENSOR_FIRED
+**Fire id**: 17c72398
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:18:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: 17c72398
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/setup.ts
+**Duration ms**: 2366
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:18:49Z
+**Event**: SENSOR_FIRED
+**Fire id**: 300ddd97
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:18:49Z
+**Event**: SENSOR_PASSED
+**Fire id**: 300ddd97
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+**Duration ms**: 447
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:18:49Z
+**Event**: SENSOR_FIRED
+**Fire id**: e8eaac26
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:18:52Z
+**Event**: SENSOR_PASSED
+**Fire id**: e8eaac26
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+**Duration ms**: 2970
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:19:56Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1a1482ce
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:19:57Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1a1482ce
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+**Duration ms**: 441
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:19:57Z
+**Event**: SENSOR_FIRED
+**Fire id**: d3da1cc5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:19:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: d3da1cc5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/lib/api-client.ts
+**Duration ms**: 2190
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:20:27Z
+**Event**: SENSOR_FIRED
+**Fire id**: c03dc0b6
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/SearchFilterComponent.test.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:20:30Z
+**Event**: SENSOR_PASSED
+**Fire id**: c03dc0b6
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/test/unit/components/SearchFilterComponent.test.tsx
+**Duration ms**: 2674
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:20:51Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9b9bcacc
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:20:54Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9b9bcacc
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.tsx
+**Duration ms**: 2930
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:20:59Z
+**Event**: SENSOR_FIRED
+**Fire id**: 11f3e847
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:21:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: 11f3e847
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/components/SearchFilter/SearchFilterComponent.tsx
+**Duration ms**: 2451
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:22:20Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6fd153d5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/search/SearchPageClient.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:22:23Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6fd153d5
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/search/SearchPageClient.tsx
+**Duration ms**: 2479
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T01:22:29Z
+**Event**: SENSOR_FIRED
+**Fire id**: c3bb7a72
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/search/page.tsx
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T01:22:31Z
+**Event**: SENSOR_PASSED
+**Fire id**: c3bb7a72
+**Sensor ID**: type-check
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-csv-import-display/src/app/search/page.tsx
+**Duration ms**: 2238
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-08-12T01:27:23Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-developer-agent
+**Agent ID**: a8654524582eb6263
+**Message**: All 14 plan steps are checked. Summary of the work:\n\n**Verified**: `npx tsc --noEmit` clean, `npx eslint .` clean, `npx vitest run` → 43/43 tests pass (≥80% line coverage), `npm run build` (Next.js pr
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-08-12T01:27:55Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/.aidlc-reviewer-dispatch.json
+**Context**: .aidlc-reviewer-dispatch.json
+
+---
+
+## Review Requested
+**Timestamp**: 2026-08-12T01:28:00Z
+**Event**: REVIEW_REQUESTED
+**Stage**: code-generation
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: csv-import-display
+**Iteration**: 1
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-08-12T01:33:40Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-architecture-reviewer-agent
+**Agent ID**: a73ad03e89b19f2f2
+**Message**: **Reviewer:** aidlc-architecture-reviewer-agent\n\n**判定: READY**\n\n`code-summary.md`(`/home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display/aidlc/spaces/default/intents/260805-csv-master/con
+
+---
+
+## Review Completed
+**Timestamp**: 2026-08-12T01:33:49Z
+**Event**: REVIEW_COMPLETED
+**Stage**: code-generation
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: csv-import-display
+**Iteration**: 1
+**Verdict**: READY
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-08-12T01:34:53Z
+**Event**: DECISION_RECORDED
+**Stage**: code-generation
+**Decision**: Anything to add for next time? (§13 learnings; 1 parked open question: Storybook build incompatibility)
+**Options**: Nothing to add,Add a note,Promote Storybook issue as a project note
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T01:35:59Z
+**Event**: HUMAN_TURN
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T01:38:34Z
+**Event**: HUMAN_TURN
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T01:46:40Z
+**Event**: HUMAN_TURN
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T01:48:17Z
+**Event**: HUMAN_TURN
+
+---
+
+## Rule Learned
+**Timestamp**: 2026-08-12T01:48:40Z
+**Event**: RULE_LEARNED
+**Stage**: code-generation
+**Candidate-ID**: oq1
+**Destination**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/memory/project.md
+**Heading**: ## Decided
+**Source**: orchestrator
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-08-12T01:48:45Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: code-generation
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T02:00:07Z
+**Event**: HUMAN_TURN
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T02:03:43Z
+**Event**: HUMAN_TURN
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-08-12T02:04:00Z
+**Event**: GATE_APPROVED
+**Stage**: code-generation
+**User Input**: Approve
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-08-12T02:04:00Z
+**Event**: STAGE_COMPLETED
+**Stage**: code-generation
+**Details**: Stage Code Generation approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-08-12T02:04:00Z
+**Event**: STAGE_STARTED
+**Stage**: build-and-test
+**Agent**: aidlc-quality-agent
+
+---
+
+## Bolt Completed
+**Timestamp**: 2026-08-12T02:04:08Z
+**Event**: BOLT_COMPLETED
+**Bolt names**: csv-import-display
+**Batch number**: 1
+**Bolt slug**: csv-import-display
+
+---
+
+## State Merged
+**Timestamp**: 2026-08-12T02:04:08Z
+**Event**: STATE_MERGED
+**Bolt slug**: csv-import-display
+**Worktree path**: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display
+**Source state hash**: bda955c1f01c26a641ad2aaa5e9b1b0a8d22d0bed107c3c6de0194baad0af748
+**Target state hash**: aa47f46b11615d675dc42e423a8bac0dc1a478b1d17edb5a23305f797cb1c10e
+**Conflict resolution**: clean
+
+---
+
+## Audit Merged
+**Timestamp**: 2026-08-12T02:04:08Z
+**Event**: AUDIT_MERGED
+**Bolt slug**: csv-import-display
+**Entries Merged**: 0
+**Source Audit Hash**: 67e1ec14e74a351723c6c5d722b13fb7c9e3bd44d0d28ceb0a1438a1b4a3b8b2
+**Fork Boundary**: 282011
+
+---
+
+## Worktree Merged
+**Timestamp**: 2026-08-12T02:04:14Z
+**Event**: WORKTREE_MERGED
+**Bolt slug**: csv-import-display
+**Worktree path**: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display
+**Target branch**: main
+**Strategy**: squash
+
+---
+
+## Error Logged
+**Timestamp**: 2026-08-12T02:04:14Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-worktree
+**Command**: aidlc-worktree merge --slug csv-import-display --target main --strategy squash --repo aidlc-v2-sogo-package --message csv-import-display: walking skeleton (CSV master data import + display)
+**Error**: [slug=csv-import-display] git commit failed: exit 1
+
+---
+
+## Worktree Merged
+**Timestamp**: 2026-08-12T02:05:11Z
+**Event**: WORKTREE_MERGED
+**Bolt slug**: csv-import-display
+**Worktree path**: /home/mgdoc/work/src/sogo/.aidlc/worktrees/bolt-csv-import-display
+**Target branch**: main
+**Strategy**: squash
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-08-12T02:09:25Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-instructions.md
+**Context**: construction > build-and-test > build-instructions.md
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:09:25Z
+**Event**: SENSOR_FIRED
+**Fire id**: 090f9630
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:09:25Z
+**Event**: SENSOR_PASSED
+**Fire id**: 090f9630
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-instructions.md
+**Duration ms**: 35
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:09:25Z
+**Event**: SENSOR_FIRED
+**Fire id**: e041fef2
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:09:25Z
+**Event**: SENSOR_PASSED
+**Fire id**: e041fef2
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-instructions.md
+**Duration ms**: 31
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-08-12T02:09:38Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/unit-test-instructions.md
+**Context**: construction > build-and-test > unit-test-instructions.md
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:09:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: 66365eab
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/unit-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:09:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: 66365eab
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/unit-test-instructions.md
+**Duration ms**: 34
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:09:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: c18ad1a5
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/unit-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:09:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: c18ad1a5
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/unit-test-instructions.md
+**Duration ms**: 31
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-08-12T02:09:50Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/integration-test-instructions.md
+**Context**: construction > build-and-test > integration-test-instructions.md
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:09:50Z
+**Event**: SENSOR_FIRED
+**Fire id**: df82c396
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/integration-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:09:50Z
+**Event**: SENSOR_PASSED
+**Fire id**: df82c396
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/integration-test-instructions.md
+**Duration ms**: 32
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:09:50Z
+**Event**: SENSOR_FIRED
+**Fire id**: cb10affe
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/integration-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:09:50Z
+**Event**: SENSOR_PASSED
+**Fire id**: cb10affe
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/integration-test-instructions.md
+**Duration ms**: 30
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-08-12T02:10:06Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/security-test-instructions.md
+**Context**: construction > build-and-test > security-test-instructions.md
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:10:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: bca86ea1
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/security-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:10:06Z
+**Event**: SENSOR_PASSED
+**Fire id**: bca86ea1
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/security-test-instructions.md
+**Duration ms**: 32
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:10:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: 74eb40c6
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/security-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:10:06Z
+**Event**: SENSOR_PASSED
+**Fire id**: 74eb40c6
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/security-test-instructions.md
+**Duration ms**: 30
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-08-12T02:10:23Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-test-results.md
+**Context**: construction > build-and-test > build-test-results.md
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:10:23Z
+**Event**: SENSOR_FIRED
+**Fire id**: c591373a
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-test-results.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:10:23Z
+**Event**: SENSOR_PASSED
+**Fire id**: c591373a
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-test-results.md
+**Duration ms**: 32
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:10:23Z
+**Event**: SENSOR_FIRED
+**Fire id**: 03d33aa7
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-test-results.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:10:23Z
+**Event**: SENSOR_PASSED
+**Fire id**: 03d33aa7
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-test-results.md
+**Duration ms**: 30
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-08-12T02:10:38Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-and-test-summary.md
+**Context**: construction > build-and-test > build-and-test-summary.md
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:10:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: 4f552a5e
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-and-test-summary.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:10:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: 4f552a5e
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-and-test-summary.md
+**Duration ms**: 37
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:10:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: ca28c063
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-and-test-summary.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:10:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: ca28c063
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/build-and-test-summary.md
+**Duration ms**: 32
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-08-12T02:11:13Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/memory.md
+**Context**: construction > build-and-test > memory.md
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:11:13Z
+**Event**: SENSOR_FIRED
+**Fire id**: f299554d
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/memory.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:11:13Z
+**Event**: SENSOR_PASSED
+**Fire id**: f299554d
+**Sensor ID**: required-sections
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/memory.md
+**Duration ms**: 33
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-08-12T02:11:13Z
+**Event**: SENSOR_FIRED
+**Fire id**: 414c2ec2
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/memory.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-08-12T02:11:13Z
+**Event**: SENSOR_PASSED
+**Fire id**: 414c2ec2
+**Sensor ID**: upstream-coverage
+**Stage slug**: build-and-test
+**Output path**: aidlc/spaces/default/intents/260805-csv-master/construction/build-and-test/memory.md
+**Duration ms**: 30
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-08-12T02:11:27Z
+**Event**: DECISION_RECORDED
+**Stage**: build-and-test
+**Decision**: Anything to add for next time? (§13 learnings)
+**Options**: Nothing to add,Add a note,Promote c2 (Docker/CI note) as a practice
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T02:12:24Z
+**Event**: HUMAN_TURN
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T02:23:03Z
+**Event**: HUMAN_TURN
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T02:25:03Z
+**Event**: HUMAN_TURN
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T02:27:29Z
+**Event**: HUMAN_TURN
+
+---
+
+## Question Answered
+**Timestamp**: 2026-08-12T02:27:35Z
+**Event**: QUESTION_ANSWERED
+**Stage**: build-and-test
+**Details**: Promote c2 as a practice: Testcontainers integration tests require a working Docker daemon; CI is the authoritative verification point when local/sandbox environments lack Docker access
+
+---
+
+## Rule Learned
+**Timestamp**: 2026-08-12T02:27:49Z
+**Event**: RULE_LEARNED
+**Stage**: build-and-test
+**Candidate-ID**: c2
+**Destination**: /home/mgdoc/work/src/sogo/aidlc/spaces/default/memory/project.md
+**Heading**: ## Testing Posture
+**Source**: orchestrator
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-08-12T02:27:54Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: build-and-test
+
+---
+
+## Human Turn
+**Timestamp**: 2026-08-12T03:03:01Z
+**Event**: HUMAN_TURN
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-08-12T03:03:08Z
+**Event**: GATE_APPROVED
+**Stage**: build-and-test
+**User Input**: Approve
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-08-12T03:03:08Z
+**Event**: STAGE_COMPLETED
+**Stage**: build-and-test
+**Details**: Stage Build and Test approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-08-12T03:03:08Z
+**Event**: STAGE_STARTED
+**Stage**: ci-pipeline
+**Agent**: aidlc-pipeline-deploy-agent
+
+---
