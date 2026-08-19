@@ -45,6 +45,7 @@
 
 - DECIDED: 単位数表マスタCSVの検証は全22列中21列(予備項目を除くすべての列)に適用する。予備項目(CSV定義表で定義欄が空の列)のみ検証対象外とする — 定義が無い列には検証すべき形式的ルールが存在しないため (Stage scope-definition, 2026-08-05; 列数を19→21に訂正 2026-08-07) (learned 2026-08-05) <!-- cid:scope-definition:c1 -->
 - DECIDED: Storybookのビルド/dev(build-storybook, storybook dev)は現在、@storybook/nextjs(8.6.18)とNext.js(14.2.35)の組み合わせで既知のアップストリーム互換性問題(SB_BUILDER-WEBPACK5_0002、webpackインスタンス不一致)により失敗する。作成済みの.stories.tsxファイル自体は正しいコードであり欠陥ではない。team-practices.mdのTesting Posture(6ツール全てCIブロッキング必須)を満たすには、ci-pipelineステージ着手前にNext.jsダウングレードまたはStorybookメジャーアップグレード(9.x/10.x)による解決が必要 (Stage code-generation, Bolt csv-import-display, 2026-08-12) (learned 2026-08-12) <!-- cid:code-generation:oq1 -->
+- DECIDED: ci.ymlのmagicpod-acceptance-testsジョブは、実際のMagicPod組織/プロジェクト/APIトークン(MAGICPOD_API_TOKEN等のsecrets)が未設定のため`if: false`で無効化されている。運用フェーズでMagicPodアカウントを設定し、実際のテストプラン名を指定した上で有効化する必要がある (Stage ci-pipeline, 2026-08-12) (learned 2026-08-12) <!-- cid:ci-pipeline:oq-magicpod -->
 ## Scope Overrides
 
 <!-- Custom scope rules for this project. -->
@@ -75,3 +76,4 @@
 <!-- Format: NEVER/ALWAYS [behavior] (learned [date]) -->
 - ALWAYS pass --arguments "<short description>" when running intent-birth (including via the compose flow's birth step), so aidlc-state.md's Project field is populated instead of left at the birth-time placeholder [Project description] (learned 2026-08-05) (learned 2026-08-05) <!-- cid:intent-capture:c2 -->
 - ALWAYS 仕様書やユーザー入力中の列挙リスト(CSV列、APIフィールド、要件一覧等)について要約の「N個」という数値を記載・引用する前に、実際に列挙項目を1件ずつ数え直して原本と照合する。特にその数値をproject.md/team.md等、複数の将来ステージが参照する永続メモリへ昇格する前には必ず照合する — 単位数表マスタCSVの列数が「19列」→正しくは「21列(全22列中)」と誤って複数ステージ・project.md/team.mdに伝播した実例から学んだ (learned 2026-08-10) (learned 2026-08-10) <!-- cid:requirements-analysis:c1 -->
+- NEVER Storybookをブロッキングチェックのまま放置しない — CI設定(.github/workflows/ci.yml)ではStorybookジョブのみ`continue-on-error: true`として一時的に非ブロッキング化されている(既知の@storybook/nextjs + Next.js 14.2.35互換性問題、project.md DECIDED参照、ユーザー承認済み)。互換性問題の解決後は必ずブロッキングに戻すこと (learned 2026-08-12, Stage ci-pipeline) (learned 2026-08-12) <!-- cid:ci-pipeline:c1 -->

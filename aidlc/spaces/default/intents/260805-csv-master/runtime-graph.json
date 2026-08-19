@@ -2874,14 +2874,131 @@
     {
       "stage_slug": "ci-pipeline",
       "started_at": "2026-08-12T03:03:08Z",
-      "completed_at": null,
+      "completed_at": "2026-08-12T03:45:28Z",
       "agent": "aidlc-pipeline-deploy-agent",
       "memory_path": "aidlc/spaces/default/intents/260805-csv-master/construction/ci-pipeline/memory.md",
-      "memory_entries": null,
-      "memory_breakdown": null,
-      "sensor_firings": [],
-      "outcome": "pending",
-      "learnings_captured": null
+      "memory_entries": 2,
+      "memory_breakdown": {
+        "interpretations": 0,
+        "deviations": 1,
+        "tradeoffs": 0,
+        "open_questions": 1
+      },
+      "sensor_firings": [
+        {
+          "id": "required-sections",
+          "fire_id": "5f00f700",
+          "result": "passed",
+          "ts": "2026-08-12T03:14:10Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "e941071d",
+          "result": "passed",
+          "ts": "2026-08-12T03:14:10Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "a0f1d426",
+          "result": "passed",
+          "ts": "2026-08-12T03:37:49Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "86a35057",
+          "result": "passed",
+          "ts": "2026-08-12T03:37:49Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "1b0fd0c0",
+          "result": "passed",
+          "ts": "2026-08-12T03:37:55Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "54811bf9",
+          "result": "passed",
+          "ts": "2026-08-12T03:37:55Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "ea9e6424",
+          "result": "passed",
+          "ts": "2026-08-12T03:38:02Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "516b03db",
+          "result": "passed",
+          "ts": "2026-08-12T03:38:03Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "cce899b6",
+          "result": "passed",
+          "ts": "2026-08-12T03:38:08Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "ff394519",
+          "result": "passed",
+          "ts": "2026-08-12T03:38:08Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "049c53bc",
+          "result": "passed",
+          "ts": "2026-08-12T03:39:06Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "1e7f4d76",
+          "result": "passed",
+          "ts": "2026-08-12T03:39:06Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "eb053321",
+          "result": "passed",
+          "ts": "2026-08-12T03:39:20Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "527beb60",
+          "result": "passed",
+          "ts": "2026-08-12T03:39:21Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "1b30aa02",
+          "result": "passed",
+          "ts": "2026-08-12T03:39:54Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "1c6eb56a",
+          "result": "passed",
+          "ts": "2026-08-12T03:39:54Z"
+        },
+        {
+          "id": "required-sections",
+          "fire_id": "f8ce7d0d",
+          "result": "passed",
+          "ts": "2026-08-12T03:40:04Z"
+        },
+        {
+          "id": "upstream-coverage",
+          "fire_id": "91fb1610",
+          "result": "passed",
+          "ts": "2026-08-12T03:40:04Z"
+        }
+      ],
+      "outcome": "approved",
+      "learnings_captured": {
+        "from_orchestrator": 2,
+        "from_user_addition": 0
+      }
     }
   ]
 }
